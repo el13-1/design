@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('hello', function(done) {
   console.log ('привет мир');
@@ -15,3 +16,11 @@ gulp.task('browser-sync', function () {
   });
   gulp.watch("./*.html").on('change', browserSync.reload);
 });
+
+function serveSass() {
+  return src("*./sass/*.sass")
+    .pipe(autoprefixer({
+      cascade: false
+    }))
+  
+}

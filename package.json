@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/el13-1/design#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
   },
   "dependencies": {
     "browser-sync": "^2.26.7"
