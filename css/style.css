@@ -360,6 +360,7 @@ template {
 .container {
   max-width: 1256px;
   margin: auto;
+  width: 96%;
 }
 
 .button {
@@ -389,6 +390,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 45px;
 }
 
 .logo {
@@ -409,6 +411,38 @@ header {
 
 .contacts__fone {
   margin-right: 45px;
+}
+
+.hero {
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left {
+  max-width: 81px;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insta {
+  text-transform: uppercase;
+  color: #E3B873;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 body {
