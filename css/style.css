@@ -375,7 +375,17 @@ template {
   color: #fff;
 }
 
+.button--outline {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
 header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   background-color: #131313;
   padding: 24px 0;
 }
@@ -409,6 +419,15 @@ header {
   color: #E3B873;
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contacts__fone {
   margin-right: 45px;
 }
@@ -420,6 +439,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
+}
+
+.hero__right {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.hero__container {
+  max-width: 504px;
+  margin-left: 60px;
+  margin-top: 10%;
 }
 
 .left {
@@ -443,6 +475,50 @@ header {
   display: inline-block;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.down {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #131313;
+  padding: 34px 49px;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+}
+
+.hero__down {
+  font-size: 12px;
+  top: 91%;
+  left: -9%;
+}
+
+.title {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.title--prymery {
+  color: #E3B873;
+}
+
+.text {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.right__button {
+  margin-right: 20px;
+}
+
+*, *:after, *:befor {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
