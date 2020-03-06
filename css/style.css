@@ -368,11 +368,26 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .button--prymery {
   background-color: #E3B873;
   color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.button--prymery:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button--outline {
@@ -388,6 +403,7 @@ header {
   width: 100%;
   background-color: #131313;
   padding: 24px 0;
+  z-index: 10;
 }
 
 .menu {
@@ -413,6 +429,12 @@ header {
   color: #fff;
   text-transform: uppercase;
   margin-right: 40px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav__item:hover {
+  color: #E3B873;
 }
 
 .fone {
@@ -442,8 +464,16 @@ header {
   margin-top: 20px;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
 .hero__right {
-  margin-top: 100px;
+  margin-top: 70px;
   position: relative;
   width: 100%;
 }
@@ -466,15 +496,30 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .insta {
   text-transform: uppercase;
   color: #E3B873;
   text-decoration: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0.8;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.insta::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: #E3B873;
+  margin-left: 8px;
 }
 
 .down {
@@ -483,14 +528,33 @@ header {
   background-color: #131313;
   padding: 34px 49px;
   text-decoration: none;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+}
+
+.down::after {
+  content: '';
+  background: url("../img/arrow-dawn.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 12px;
 }
 
 .hero__down {
   font-size: 12px;
   top: 91%;
   left: -9%;
+  z-index: 3;
 }
 
 .title {
