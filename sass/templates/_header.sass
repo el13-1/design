@@ -1,26 +1,49 @@
-header
+
+  
+
+  
+  
+
+.header
+  position: relative
+  max-width: 1438px
+  
+  margin: auto
+  
+ 
+
+  
+  
+.header__container
+  z-index: 10
   position: fixed
-  left: 0
   top: 0
   width: 100%
+  max-width: inherit
+  
   background-color: $dark
-  padding: 24px 0
-  z-index: 10
-
+  margin: auto
+  padding: 21px 0
 
   
-  
-  
-
 .menu
+  max-width: 1438px
+  margin:auto
   display: flex
   justify-content: space-between
   align-items: center
-  margin-left: 55px
+  &__logo
+    margin-left: 81px
+  &__contacts
+    margin-right: 14px
+
 
 .logo
   color: $primery
   text-transform: uppercase
+  font-weight: 700
+  letter-spacing: 0.049em
+  font-size: 0.97rem
 
 .nav
   &__item
@@ -31,6 +54,14 @@ header
     transition: color 0.2s
     &:hover
       color: $primery  
+  &__menu
+    margin-left: 1.8rem  
+
+.item
+  font-size: 0.95rem
+  font-weight: 300;
+  letter-spacing: 0.03em 
+
 
 .fone
   color: $primery
