@@ -358,6 +358,7 @@ template {
 }
 
 .container1 {
+  width: 94%;
   max-width: 1438px;
   margin: auto;
 }
@@ -696,11 +697,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.col {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card__text {
@@ -738,13 +736,13 @@ section {
 .card__pricetag {
   font-family: Yeseva One, cursive;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 1.29rem;
   text-align: center;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;
-  padding: 1.21rem 2.94rem 1.21rem 2.14rem;
+  padding: 1.21rem 2.8rem 1.21rem 2.9rem;
   position: absolute;
   left: 0;
 }
@@ -767,8 +765,22 @@ img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 1290px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .col {
+    margin-bottom: 6rem;
+  }
+}
+
 @media screen and (max-width: 1200px) {
-  html {
+  .hero__container {
+    margin-left: 10.14rem;
     font-size: 9px;
   }
   .logo {
@@ -776,7 +788,22 @@ img {
   }
 }
 
+@media screen and (max-width: 998px) {
+  body, .logo, .item, .button {
+    font-size: 0.7rem;
+  }
+}
+
 @media screen and (max-width: 826px) {
+  .hero__container {
+    margin-left: 4.285rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1.15rem;
+  }
   .left {
     display: none;
   }
@@ -791,7 +818,10 @@ img {
   }
 }
 
-@media screen and (max-width: 646px) {
+@media screen and (max-width: 674px) {
+  .menu__logo {
+    margin-left: 15px;
+  }
   .hero__container {
     max-width: 36rem;
     margin-left: 4.285rem;
@@ -817,6 +847,9 @@ img {
 }
 
 @media screen and (max-width: 424px) {
+  .contacts__fone {
+    margin-right: 15px;
+  }
   .contacts__button {
     display: none;
   }
@@ -834,6 +867,24 @@ img {
   }
   .right__button {
     width: 100%;
+  }
+  .card__title {
+    font-size: 1.07rem;
+  }
+  .card__item {
+    font-size: 0.93rem;
+    line-height: 169.8%;
+  }
+  .card__pricetag {
+    font-size: 1.07rem;
+    padding: 0.78rem 2rem;
+  }
+  .card__text {
+    padding: 1.1rem 2.14rem;
+    margin-top: -10.4rem;
+  }
+  .card__list {
+    margin-bottom: 1.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
