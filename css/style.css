@@ -705,12 +705,12 @@ section {
 
 .card__text {
   position: relative;
-  max-width: 21rem;
-  margin-top: -8rem;
+  max-width: 19.2rem;
+  margin-top: -9.5rem;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.79rem 2.14rem;
+  padding: 1.38rem 2.14rem;
   background: #FFFFFF;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -722,10 +722,12 @@ section {
   font-weight: normal;
   font-size: 1.28rem;
   color: #363636;
+  margin-left: 0.36rem;
+  line-height: 0;
 }
 
 .card__list {
-  margin: 0;
+  margin: 0 0 0 0.36rem;
   padding: 0 0 0 1rem;
   font-size: 1.07rem;
   line-height: 1.79rem;
@@ -742,7 +744,7 @@ section {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;
-  padding: 1.21rem 2.14rem;
+  padding: 1.21rem 2.94rem 1.21rem 2.14rem;
   position: absolute;
   left: 0;
 }
