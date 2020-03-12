@@ -682,10 +682,6 @@ h2 {
   width: 207px;
 }
 
-section {
-  margin: 60px 0 60px 0;
-}
-
 .section-title__move {
   margin-bottom: 2.12rem;
 }
@@ -801,6 +797,8 @@ section {
   border-top: none;
   border-right: none;
   border-color: rgba(255, 255, 255, 0.15);
+  font-size: 1.285rem;
+  color: #fff;
   width: 100%;
 }
 
@@ -858,6 +856,96 @@ section {
   display: inline-block;
 }
 
+.section-title__move {
+  margin-bottom: 2.12rem;
+}
+
+.section-title__promo {
+  font-family: FuturaBookC, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.43rem;
+  line-height: 1.92rem;
+  text-align: center;
+  max-width: 52.9rem;
+  margin: auto;
+  margin-bottom: 2.78rem;
+  color: #363636;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__text {
+  position: relative;
+  max-width: 19.2rem;
+  margin-top: -9.5rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.38rem 2.14rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card__title {
+  font-family: Yeseva One, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.28rem;
+  color: #363636;
+  margin-left: 0.36rem;
+  line-height: 0;
+}
+
+.card__list {
+  margin: 0 0 0 0.36rem;
+  padding: 0 0 0 1rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.07rem;
+}
+
+.card__pricetag {
+  font-family: Yeseva One, cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.29rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.21rem 2.8rem 1.21rem 2.9rem;
+  position: absolute;
+  left: 0;
+}
+
+.card--pricetag {
+  padding-right: 4.78rem;
+}
+
+.imgc {
+  position: relative;
+}
+
+.imgc::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.4);
+}
+
 *, *:after, *:befor {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -865,6 +953,10 @@ section {
 
 html {
   font-size: 14px;
+}
+
+section {
+  margin: 60px 0 60px 0;
 }
 
 body {
