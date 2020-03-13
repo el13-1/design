@@ -447,6 +447,41 @@ h2 {
   background-color: transparent;
 }
 
+.policy__box {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.policy__box:checked + .policy__label::before {
+  background: #E3B873 url(../img/check.svg) no-repeat center/0.8rem;
+}
+
+.policy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 2.78rem;
+}
+
+.policy__label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 0.64rem;
+}
+
 .header {
   position: relative;
   max-width: 1438px;
@@ -758,104 +793,6 @@ h2 {
           align-items: center;
 }
 
-.form {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 28px 49px;
-  max-width: 506px;
-  max-height: 509px;
-  background-color: #131313;
-}
-
-.form--title {
-  font-family: FuturaDemiC;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
-  max-width: 297px;
-  color: #fff;
-}
-
-.form__title {
-  margin: auto;
-}
-
-.form__text {
-  font-family: FuturaMediumC;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.form__input {
-  background-color: transparent;
-  border-left: none;
-  border-top: none;
-  border-right: none;
-  border-color: rgba(255, 255, 255, 0.15);
-  font-size: 1.285rem;
-  color: #fff;
-  width: 100%;
-}
-
-.form__btn {
-  display: block;
-}
-
-.form__input::-webkit-input-placeholder {
-  color: #fff;
-  font-family: FuturaMediumC;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.form__input:-ms-input-placeholder {
-  color: #fff;
-  font-family: FuturaMediumC;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.form__input::-ms-input-placeholder {
-  color: #fff;
-  font-family: FuturaMediumC;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.form__input::placeholder {
-  color: #fff;
-  font-family: FuturaMediumC;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.radio1 {
-  font-family: FuturaBookC;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  display: inline-block;
-  color: #fff;
-}
-
-.radio {
-  display: inline-block;
-}
-
 .section-title__move {
   margin-bottom: 2.12rem;
 }
@@ -946,6 +883,95 @@ h2 {
   background-color: rgba(19, 19, 19, 0.4);
 }
 
+.modal__close {
+  background: transparent url("../img/close.svg") no-repeat center center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.modal__input {
+  margin-bottom: 3.428rem;
+}
+
+.modal__input:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.modal__dialog {
+  background-color: #131313;
+  padding: 28px 49px;
+  max-width: 506px;
+  max-height: 509px;
+  position: relative;
+}
+
+.modal--title {
+  font-family: Yeseva One, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.35rem;
+  line-height: 1.85rem;
+  text-align: center;
+  max-width: 25.8rem;
+  color: #fff;
+}
+
+.modal__title {
+  margin: 0 auto 2.428rem auto;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form--lable {
+  font-family: FuturaMediumC, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form__input {
+  background: transparent;
+  font-family: FuturaMediumC, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input::placeholder {
+  color: #fff;
+}
+
 *, *:after, *:befor {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -966,12 +992,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-@media screen and (min-width: 1290px) {
-  .form {
-    margin-right: 7.14rem;
-  }
 }
 
 @media screen and (max-width: 1290px) {

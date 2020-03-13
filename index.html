@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -339,9 +339,32 @@
        </div>
        <!-- /.container1 -->
      </section>
-   
+   </main>
 
-  </main>
+   <div class="modal">
+     <div class="modal__dialog">
+       <button class="modal__close">
+         
+       </button> <!-- /.modal__close -->
+       <h3 class="modal__title modal--title">Оставьте заявку и наш менеджер свяжется с вами</h3>
+       <form action="#" class="form modal__form">
+         <label for="user-name" class="label form__label form--lable">Имя</label>
+         <input type="text" placeholder="Как вас зовут:" class="input form__input modal__input" id="user-name">
+         <label for="user-fone" class="label form__label form--lable">Телефон</label>
+         <input type="tel" placeholder="Ваш телефон:" class="input form__input modal__input" id="user-fone">
+         <label for="user-email" class="label form__label form--lable">Email</label>
+         <input type="email" placeholder="Ваш email" class="input form__input modal__input" id="user-email">
+         <div class="policy">
+           <input type="checkbox" name="policy-checkbox" class="policy__box" id="policy-checkbox" checked>
+           <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных </label>
+         </div>
+          <div class="button button--prymery modal__button">Отправить заявку</div>
+       </form>
+       <!-- /.form modal__form -->
+     </div>
+     <!-- /.modal__dialog -->
+   </div>
+   <!-- /.modal -->
 </body>
 
 </html>
