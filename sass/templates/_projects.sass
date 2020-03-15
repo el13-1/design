@@ -1,0 +1,106 @@
+
+    
+.row1
+  
+  display: flex
+  justify-content: center
+  background: $dark url(../img/pr-bg.svg) no-repeat center
+  background-size: cover
+  max-height: 76.71rem
+  padding: 12.57rem 7.28rem
+  &--col50
+    width: 45%
+
+
+.col50
+  flex-basis: 55%
+ 
+  border: 1px solid red
+
+.wrap
+  max-width: 31.57rem
+  &--title
+    margin: 0
+    font-family: Yeseva One, cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.93rem
+    
+    color: $primery
+    text-transform: uppercase 
+  &--title--line
+    margin-bottom: 2.43rem
+    margin-top: 2.64px
+    display: flex
+    align-items: center  
+    &::after
+      margin-left: 20px
+      content: ''
+      width: 6.57rem
+      height: 2px
+      background-color: $primery
+  &__text
+    font-family: FuturaBookC, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 1.78rem
+    color: $light
+
+.wrap1
+  display: flex
+  
+  flex-wrap: wrap
+  &__discript
+    flex-basis: 50%
+  &--title
+    font-family: Yeseva One, cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 1.78px
+    color: $primery
+    text-transform: uppercase 
+  &--text
+    font-family: FuturaBookC, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1.07rem
+    line-height: 1.43rem
+    color: $light
+    padding-bottom: 1.43rem
+  &__text
+    margin-bottom: 5.71rem
+    //swiper
+.swiper-container
+  min-height: 40px 
+       
+
+.swiper-pagination-bullet
+  background-color: rgba($light ,0.3 )
+
+
+.swiper-pagination-bullet-active
+  background-color: $light  
+.swiper-button-prev
+  left: 0
+  background: url('../img/arrow-prev.svg') no-repeat center
+  background-size: 41px
+  width: 42px
+  height: 14px  
+  bottom: 0
+  top: auto
+.swiper-button-next
+  background: url('../img/arrow-next.svg') no-repeat center
+  background-size: 41px
+  width: 42px
+  height: 14px  
+  bottom: 0
+  top: auto
+.swiper-button-next:after, .swiper-button-prev:after
+  display: none
+
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: 0  
+    //swiper  
