@@ -8,18 +8,41 @@
     margin-bottom: 6rem
 
 @media screen and ( max-width: 1200px )
+  body, .logo, .item, .button
+    font-size: 0.7rem
+  .row1
+    padding: 12.57rem 5.5rem  
+  .wrap
+    &--title
+      font-size: 1.33rem
+      &--line
+        margin-bottom: 0.43rem
+    &__text
+      font-size: 0.95rem  
+      max-width: 335px
+  .wrap1
+    &--title
+      font-size: 0.95rem
+    &--text
+      font-size: 0.8rem  
+      padding-bottom: 0
+  .swiper-pagination-bullet
   
+  width:  7px
+  height: 7px
+      
   
   .hero__container
     margin-left: 10.14rem  
     font-size: 9px  
-  .logo
-    display: none  
+   
   
 @media screen and ( max-width: 998px )
-  body, .logo, .item, .button
-    font-size: 0.7rem
-  
+  .row1
+    flex-direction: column
+    
+  .logo
+    display: none 
 
 @media screen and ( max-width: 826px ) 
   .hero__container
@@ -62,6 +85,8 @@
       margin-top: 20px         
 
 @media screen and ( max-width: 424px )
+  .conrainer1
+    width: 94%
   .contacts__fone
     margin-right: 15px
   .contacts__button
