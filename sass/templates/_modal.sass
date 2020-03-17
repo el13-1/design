@@ -11,6 +11,9 @@
   background-color: rgba($dark ,0.6 )
   left: 0
   top: 0
+  &__form
+    display: flex
+    flex-direction: column
   &--visible
     opacity: 1
     visibility: visible
@@ -51,28 +54,24 @@
   &__button
     align-self: flex-end
    
-
-
-.form
-  display: flex
-  flex-direction: column
   &--lable
+    font-family: FuturaBookC
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 20px
+    color: $light
+ 
+  &__input
+    color: $light
+    background: transparent
     font-family: FuturaMediumC, sans-serif
     font-style: normal
     font-weight: 300
     font-size: 18px
     line-height: 25px
-    color: rgba(255, 255, 255, 0.5)  
-  &__input
-    background: transparent;
-    font-family: FuturaMediumC, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
-    
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+    border: none
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) 
     &::placeholder
       color: $light
        

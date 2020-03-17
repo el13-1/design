@@ -57,7 +57,7 @@
       <!-- /.right hero__right -->
     </section>
     <!-- /.hero -->
-    <section class="projects projects section--dark">
+    <section class="projects section--dark">
       
         <div class="container1">
           <div class="row1">
@@ -179,15 +179,42 @@
     </section>
     <!-- /.section projects section--dark -->
     <section class="section control">
-      <div class="container">
+      <div class="container1">
 
-        <div class="section-title">
+        <div class="section-title control__section-title control--section-title">
           <h2 class="section-title__heading">онлайн контроль</h2>
           <div class="section-title__image">
             <img src="img/video.svg" alt="">
           </div>
         </div>
         <!-- /. section-title-->
+        <div class="control__video video">
+          <img src="img/play.svg" alt="play" class="video__play">
+        </div>
+        <!-- /.control__video video --> 
+        <p class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете
+          зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших
+          объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+        </p>
+        <form action="#" class="control__form">
+          <div class="lable-input">
+            <label for="user-name" class="label control__label control--lable">Имя</label>
+            <input type="text" placeholder="Как вас зовут:" class="input form__input control__input" id="user-name">
+          </div>
+          <div class="lable-input">
+          <label for="user-fone" class="label control__label control--lable">Телефон</label>
+          <input type="tel" placeholder="Ваш телефон:" class="input form__input control__input" id="user-fone">
+          </div>
+          <button class="button--prymery control__button">Отправить</button>
+          
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" class="policy__box" id="policy-checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__policy-label control--label">Я соглашаюсь с обработкой данных
+            </label>
+          </div>
+          
+        </form>
       </div>
       <!-- /.container -->
     </section>
@@ -470,17 +497,17 @@
       </button> <!-- /.modal__close -->
       <h3 class="modal__title modal--title">Оставьте заявку и наш менеджер свяжется с вами</h3>
       <form action="#" class="form modal__form">
-        <label for="user-name" class="label form__label form--lable">Имя</label>
+        <label for="user-name" class="label form__label modal--lable">Имя</label>
         <input type="text" placeholder="Как вас зовут:" class="input form__input modal__input" id="user-name">
-        <label for="user-fone" class="label form__label form--lable">Телефон</label>
+        <label for="user-fone" class="label form__label modal--lable">Телефон</label>
         <input type="tel" placeholder="Ваш телефон:" class="input form__input modal__input" id="user-fone">
-        <label for="user-email" class="label form__label form--lable">Email</label>
+        <label for="user-email" class="label form__label modal--lable">Email</label>
         <input type="email" placeholder="Ваш email" class="input form__input modal__input" id="user-email">
         <div class="policy">
           <input type="checkbox" name="policy-checkbox" class="policy__box" id="policy-checkbox" checked>
-          <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных </label>
+          <label for="policy-checkbox" class="policy__label modal--lable">Я соглашаюсь с обработкой данных </label>
         </div>
-        <div class="button button--prymery modal__button">Отправить заявку</div>
+        <button class="button button--prymery modal__button">Отправить заявку</button>
       </form>
       <!-- /.form modal__form -->
     </div>
