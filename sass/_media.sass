@@ -10,8 +10,7 @@
 @media screen and ( max-width: 1200px )
   body, .logo, .item, .button
     font-size: 0.7rem
-  .row1
-    padding: 12.57rem 5.5rem  
+   
   .wrap
     &--title
       font-size: 1.33rem
@@ -40,9 +39,19 @@
 @media screen and ( max-width: 998px )
   .row1
     flex-direction: column
-    
+    &--col50
+      width: 100%
+      order: 2
+  .col50
+    width: 100% 
+    order: 1 
+    margin-bottom: 
   .logo
     display: none 
+  .control__video
+   max-width: 49rem
+   min-height: 29.5rem
+     
 
 @media screen and ( max-width: 826px ) 
   .hero__container
@@ -62,7 +71,19 @@
     display: none 
   .service
     display: none  
-      
+  .control
+    margin-left: 10px
+    margin-right: 10px
+    &__form
+      justify-content: space-between
+      align-items: flex-start
+
+  .lable-input
+    min-width: 450px
+    margin: 20px 10px      
+  .section-title__promo
+    padding: 0 2.5rem
+
 
 @media screen and ( max-width: 674px )
   .menu__logo
@@ -76,8 +97,24 @@
     display: block
   .right__button
     margin-bottom: 1.85rem 
-  
+  .control__video
+    max-width: 40rem
+    min-height: 22.5rem 
+  .row1
+    padding-right: 3.2rem
+    padding-left: 3.2rem
+    padding-bottom: 60rem  
+  .control
+    margin-top: -59rem
+    &__text    
+      color: $light  
+    
 @media screen and ( max-height: 470px )
+  .control__video
+    max-width: 40rem
+    min-height: 20.5rem 
+  .lable-input
+    min-width: 250px  
   .hero
     &__down
       display: none
