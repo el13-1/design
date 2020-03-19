@@ -513,10 +513,6 @@ template {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.section-title__image {
-  margin-bottom: 2.214rem;
-}
-
 .video__play {
   position: relative;
   margin: auto;
@@ -1470,6 +1466,83 @@ input.invalid {
   bottom: 0;
 }
 
+.client {
+  background: #fff;
+}
+
+.client__profile-img {
+  border-radius: 50%;
+  width: 5.43rem;
+  height: 5.43rem;
+}
+
+.client__name {
+  max-width: 14.07rem;
+  font-family: Yeseva One, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 2.09rem;
+  color: #181818;
+  margin-left: 1.64rem;
+}
+
+.client__param {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E3B873;
+}
+
+.client__param1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client__param2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client--reviews {
+  width: 26.85rem;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  border: 1px solid red;
+}
+
+.client__text {
+  font-family: FuturaBookC, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.07rem;
+  line-height: 1.785rem;
+  color: #959595;
+  margin: auto;
+}
+
 *, *:after, *:befor {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1505,6 +1578,9 @@ img {
     max-width: 23rem;
     margin-bottom: 6rem;
   }
+  .client--reviews {
+    max-width: 23rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1519,6 +1595,9 @@ img {
     max-width: 22rem;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .client--reviews {
+    max-width: 22rem;
   }
   .wrap--title {
     font-size: 1.33rem;
@@ -1547,6 +1626,9 @@ img {
 
 @media screen and (max-width: 998px) {
   .col {
+    max-width: 21rem;
+  }
+  .client--reviews {
     max-width: 21rem;
   }
   .row1 {
@@ -1579,6 +1661,9 @@ img {
 
 @media screen and (max-width: 826px) {
   .col {
+    max-width: 28rem;
+  }
+  .client--reviews {
     max-width: 28rem;
   }
   .hero__container {
