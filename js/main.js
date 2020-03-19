@@ -48,4 +48,29 @@ $(document).ready(function() {
   bullets.css('left', prev.width() + 20);
 
   new WOW().init();
+
+  //валидация форм
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: "required",
+      userFone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },//сообщения
+    messages: {
+      userName: "Имя обязательно для заполнения",
+      userFone: "Телефон обязателен для заполнения",
+      userEmail: {
+        required: "email обязательно для заполнения",
+        email: "Введите ваш почтовый адрес в формате: name@domain.com"
+      }
+    }
+  });
+  
+
 });

@@ -645,6 +645,31 @@ template {
   text-transform: uppercase;
 }
 
+label.invalid {
+  color: red;
+}
+
+input.invalid {
+  border-bottom: 1px solid red;
+}
+
+.col {
+  max-width: 28rem;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 7.14rem;
+  padding-right: 7.14rem;
+}
+
 .header {
   position: relative;
   max-width: 1438px;
@@ -885,18 +910,7 @@ template {
   margin-bottom: 2.12rem;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.card__text {
+.section-title__move__text {
   position: relative;
   max-width: 19.2rem;
   margin-top: -9.5rem;
@@ -909,7 +923,7 @@ template {
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
-.card__title {
+.section-title__move__title {
   font-family: Yeseva One, cursive;
   font-style: normal;
   font-weight: normal;
@@ -919,7 +933,7 @@ template {
   line-height: 0;
 }
 
-.card__list {
+.section-title__move__list {
   margin: 0 0 0 0.36rem;
   padding: 0 0 0 1rem;
   font-size: 1.07rem;
@@ -928,7 +942,7 @@ template {
   margin-bottom: 2.07rem;
 }
 
-.card__pricetag {
+.section-title__move__pricetag {
   font-family: Yeseva One, cursive;
   font-style: normal;
   font-weight: 300;
@@ -976,17 +990,6 @@ template {
   margin: auto;
   margin-bottom: 2.78rem;
   color: #363636;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .card__text {
@@ -1063,7 +1066,6 @@ template {
   max-width: 37.14rem;
   margin: auto;
   margin-top: 3.27rem;
-  border: 1px solid red;
 }
 
 .footer-wrap {
@@ -1101,7 +1103,7 @@ template {
   font-family: FuturaBookC, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 1.285rem;
+  font-size: 1.15rem;
   line-height: 1.71rem;
 }
 
@@ -1110,7 +1112,7 @@ template {
   font-family: FuturaBookC, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 1.285rem;
+  font-size: 1.15rem;
   line-height: 1.71rem;
 }
 
@@ -1119,7 +1121,7 @@ template {
   font-family: FuturaBookC, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 1.285rem;
+  font-size: 1.15rem;
   line-height: 1.71rem;
 }
 
@@ -1128,7 +1130,7 @@ template {
   font-family: FuturaBookC, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 1.285rem;
+  font-size: 1.15rem;
   line-height: 1.71rem;
 }
 
@@ -1176,8 +1178,8 @@ template {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-right: 3.57rem;
-  padding-left: 3.57rem;
+  padding-right: 3.77rem;
+  padding-left: 3.77rem;
 }
 
 .footer--policy {
@@ -1258,9 +1260,9 @@ template {
 
 .modal__dialog {
   background-color: #131313;
-  padding: 28px 49px;
-  max-width: 506px;
-  max-height: 509px;
+  padding: 2rem 3.3rem;
+  max-width: 36.142rem;
+  max-height: 36.36rem;
   position: relative;
 }
 
@@ -1288,8 +1290,8 @@ template {
   font-family: FuturaBookC;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 1.07rem;
+  line-height: 1.43rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1299,8 +1301,8 @@ template {
   font-family: FuturaMediumC, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.28rem;
+  line-height: 1.79rem;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -1484,13 +1486,14 @@ html {
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem;
+  font-weight: normal;
 }
 
 img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1421px) {
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1499,6 +1502,7 @@ img {
         justify-content: space-around;
   }
   .col {
+    max-width: 23rem;
     margin-bottom: 6rem;
   }
 }
@@ -1506,6 +1510,15 @@ img {
 @media screen and (max-width: 1200px) {
   body, .logo, .item, .button {
     font-size: 0.7rem;
+  }
+  .row {
+    padding-left: 1.14rem;
+    padding-right: 1.14rem;
+  }
+  .col {
+    max-width: 22rem;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .wrap--title {
     font-size: 1.33rem;
@@ -1533,6 +1546,9 @@ img {
 }
 
 @media screen and (max-width: 998px) {
+  .col {
+    max-width: 21rem;
+  }
   .row1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1562,6 +1578,9 @@ img {
 }
 
 @media screen and (max-width: 826px) {
+  .col {
+    max-width: 28rem;
+  }
   .hero__container {
     margin-left: 4.285rem;
   }
@@ -1639,12 +1658,19 @@ img {
   .control__text {
     color: #fff;
   }
+  .footer__label-input {
+    max-width: 50rem;
+    width: 100%;
+  }
+  .footer-wrap {
+    padding: 2.5rem 1.28rem;
+  }
 }
 
 @media screen and (max-height: 470px) {
   .control__video {
     max-width: 40rem;
-    min-height: 20.5rem;
+    min-height: 15.5rem;
   }
   .lable-input {
     min-width: 250px;

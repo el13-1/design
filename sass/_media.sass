@@ -1,16 +1,25 @@
 
   
-@media screen and ( max-width: 1290px )
+@media screen and ( max-width: 1421px )
   .row
     display: flex
     justify-content: space-around
   .col
+    max-width: 23rem
     margin-bottom: 6rem
+  
+  
 
 @media screen and ( max-width: 1200px )
   body, .logo, .item, .button
     font-size: 0.7rem
-   
+  .row
+    padding-left: 1.14rem
+    padding-right: 1.14rem  
+  .col
+    max-width: 22rem
+    margin-left: 5px
+    margin-right: 5px 
   .wrap
     &--title
       font-size: 1.33rem
@@ -37,6 +46,8 @@
    
   
 @media screen and ( max-width: 998px )
+  .col
+    max-width: 21rem
   .row1
     flex-direction: column
     &--col50
@@ -56,6 +67,8 @@
      
 
 @media screen and ( max-width: 826px ) 
+  .col
+    max-width: 28rem
   .hero__container
     
     margin-left: 4.285rem
@@ -109,12 +122,18 @@
   .control
     margin-top: -59rem
     &__text    
-      color: $light  
+      color: $light 
+  .footer
+    &__label-input
+      max-width: 50rem
+      width: 100% 
+    &-wrap
+      padding: 2.5rem 1.28rem     
     
 @media screen and ( max-height: 470px )
   .control__video
     max-width: 40rem
-    min-height: 20.5rem 
+    min-height: 15.5rem 
   .lable-input
     min-width: 250px  
   .hero
