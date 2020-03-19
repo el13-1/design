@@ -54,7 +54,10 @@ $(document).ready(function() {
     errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
-      userName: "required",
+      userName: {
+        required: true,
+        minlength: 2
+      },
       userFone: "required",
       // compound rule
       userEmail: {
@@ -63,7 +66,10 @@ $(document).ready(function() {
       }
     },//сообщения
     messages: {
-      userName: "Имя обязательно для заполнения",
+      userName: {
+        required: "Имя обязательно для заполнения",
+        minlength: "Имя не короче 2 букв"
+      },
       userFone: "Телефон обязателен для заполнения",
       userEmail: {
         required: "email обязательно для заполнения",
@@ -71,6 +77,10 @@ $(document).ready(function() {
       }
     }
   });
+  
+  //маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+
   
 
 });
