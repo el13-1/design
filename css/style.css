@@ -1050,6 +1050,27 @@ input.invalid {
   background-color: rgba(19, 19, 19, 0.4);
 }
 
+.footer {
+  padding-top: 40px;
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+}
+
+.footer--section-title {
+  color: #E3B873;
+  max-width: 551px;
+  margin: auto;
+}
+
+.footer__container {
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  max-width: inherit;
+  background-color: #131313;
+  margin: auto;
+  padding: 21px 0;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1068,6 +1089,8 @@ input.invalid {
   background-color: #181818;
   max-width: 63.07rem;
   margin: auto;
+  margin-top: -18.14rem;
+  margin-bottom: 3.71rem;
   padding: 2.5rem 0;
 }
 
@@ -1187,6 +1210,12 @@ input.invalid {
           justify-content: center;
 }
 
+.footer__img {
+  max-width: 5.07rem;
+  margin: auto;
+  margin-bottom: 3.07rem;
+}
+
 .policy-button {
   width: 100%;
   display: -webkit-box;
@@ -1196,6 +1225,22 @@ input.invalid {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footer-menu {
+  position: relative;
+  max-width: 1438px;
+  margin: auto;
+}
+
+.map {
+  max-width: 66.07rem;
+  margin-bottom: 4.64rem;
+  margin: auto;
+}
+
+.footer__position {
+  margin-bottom: 4.64rem;
 }
 
 .modal {
@@ -1466,8 +1511,37 @@ input.invalid {
   bottom: 0;
 }
 
+.for-text {
+  max-width: 23.14rem;
+  margin: auto;
+}
+
+.txt {
+  font-family: Yeseva One, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.21rem;
+  line-height: 1.71rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.m2 {
+  margin-right: 15px;
+}
+
 .client {
   background: #fff;
+  padding-bottom: 25.28rem;
+}
+
+.client--reviews {
+  position: relative;
+  width: 26.85rem;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  margin: auto;
+  padding-bottom: 4.5rem;
 }
 
 .client__profile-img {
@@ -1496,6 +1570,7 @@ input.invalid {
       -ms-flex-align: center;
           align-items: center;
   background-color: #E3B873;
+  margin-top: 1.64rem;
 }
 
 .client__param1 {
@@ -1505,6 +1580,8 @@ input.invalid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-right: 1px solid #fff;
+  padding: 11px 17px;
 }
 
 .client__param2 {
@@ -1514,6 +1591,7 @@ input.invalid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 11px 17px;
 }
 
 .client__profile {
@@ -1525,14 +1603,6 @@ input.invalid {
           align-items: center;
 }
 
-.client--reviews {
-  width: 26.85rem;
-  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
-  margin: auto;
-  border: 1px solid red;
-}
-
 .client__text {
   font-family: FuturaBookC, sans-serif;
   font-style: normal;
@@ -1541,6 +1611,7 @@ input.invalid {
   line-height: 1.785rem;
   color: #959595;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 *, *:after, *:befor {
@@ -1566,7 +1637,7 @@ img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1421px) {
+@media screen and (max-width: 1422px) {
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1577,9 +1648,11 @@ img {
   .col {
     max-width: 23rem;
     margin-bottom: 6rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .client--reviews {
-    max-width: 23rem;
+    width: 26.7rem;
   }
 }
 
@@ -1592,12 +1665,11 @@ img {
     padding-right: 1.14rem;
   }
   .col {
-    max-width: 22rem;
     margin-left: 5px;
     margin-right: 5px;
   }
   .client--reviews {
-    max-width: 22rem;
+    width: 24rem;
   }
   .wrap--title {
     font-size: 1.33rem;
@@ -1625,11 +1697,8 @@ img {
 }
 
 @media screen and (max-width: 998px) {
-  .col {
-    max-width: 21rem;
-  }
   .client--reviews {
-    max-width: 21rem;
+    width: 20rem;
   }
   .row1 {
     -webkit-box-orient: vertical;
@@ -1664,7 +1733,7 @@ img {
     max-width: 28rem;
   }
   .client--reviews {
-    max-width: 28rem;
+    width: 26.85rem;
   }
   .hero__container {
     margin-left: 4.285rem;
@@ -1747,6 +1816,15 @@ img {
     max-width: 50rem;
     width: 100%;
   }
+  .footer--lable {
+    max-width: 670px;
+  }
+  .footer__button {
+    width: 100%;
+  }
+  .footer__box {
+    display: none;
+  }
   .footer-wrap {
     padding: 2.5rem 1.28rem;
   }
@@ -1769,6 +1847,9 @@ img {
 }
 
 @media screen and (max-width: 424px) {
+  .client--reviews {
+    width: 24.85rem;
+  }
   .conrainer1 {
     width: 94%;
   }
