@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 */
 
-$(document).ready(function() {
+$(document).ready(function () {
   var modal = $('.modal'),
-      modalBtn = $('[data-toggle="modal"]'),
-      closeBtn = $('.modal__close');
+    modalBtn = $('[data-toggle="modal"]'),
+    closeBtn = $('.modal__close');
 
-  modalBtn.on('click', function() {
+  modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
-  }); 
-  
+  });
+
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
@@ -37,7 +37,7 @@ $(document).ready(function() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },  
+    },
   })
 
   var next = $('.swiper-button-next');
@@ -64,7 +64,8 @@ $(document).ready(function() {
         required: true,
         email: true
       }
-    },//сообщения
+    }, //сообщения
+
     messages: {
       userName: {
         required: "Имя обязательно для заполнения",
@@ -77,10 +78,64 @@ $(document).ready(function() {
       }
     }
   });
-  
-  //маска для телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
 
-  
+  //валидация форм
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userFone: "required"
+      // compound rule
+
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно для заполнения",
+        minlength: "Имя не короче 2 букв"
+      },
+      userFone: "Телефон обязателен для заполнения",
+      userEmail: {
+        required: "email обязательно для заполнения",
+        email: "Введите ваш почтовый адрес в формате: name@domain.com"
+      }
+    }
+  });
+
+  //валидация форм
+  $(".control__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userFone: "required"
+      // compound rule
+
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно для заполнения",
+        minlength: "Имя не короче 2 букв"
+      },
+      userFone: "Телефон обязателен для заполнения",
+      userEmail: {
+        required: "email обязательно для заполнения",
+        email: "Введите ваш почтовый адрес в формате: name@domain.com"
+      }
+    }
+  });
+
+  //маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {
+    placeholder: "+7(___) ___-__-__"
+  });
+
+
 
 });
